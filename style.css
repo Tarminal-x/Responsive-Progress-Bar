@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+div{
+    width: 70%;
+    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), -9px -5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin: 90px auto;
+    padding: 38px;
+    position: relative;
+}
+
+.p{
+    color: rgb(255, 255, 255);
+    padding: 38px 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+}
+
+
+/* html before after and hover effect start */
+.html::before{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: rgba(221, 208, 208, 0.5);
+    border-radius: 1000px;
+    height: 23px;
+    width: calc(100% - 22%);
+    top: 38px;
+    left: 22%; 
+}
+
+.html::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #FFE53B;
+    border-radius: 25px;
+    transition: 2s;
+    height: 23px;
+    width: 0;
+    top: 38px;
+    left: 22%; 
+}
+
+div:hover .html::after{
+    width: calc(100% - 32%);
+}
+/* html before after and hover effect close */
+
+
+
+
+/* css before after and hover effect start */
+.css::before{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: rgba(221, 208, 208, 0.5);
+    border-radius: 25px;
+    height: 23px;
+    width: calc(100% - 22%);
+    top: 38px;
+    left: 22%; 
+}
+
+.css::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #FFE53B;
+    border-radius: 25px;
+    transition: 2s;
+    height: 23px;
+    width: 0;
+    top: 38px;
+    left: 22%; 
+}
+
+div:hover .css::after{
+    width: calc(100% - 42%);
+}
+/* css before after and hover effect close */
+
+
+
+
+/* boostrap before after and hover effect start */
+.boostrap::before{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: rgba(221, 208, 208, 0.5);
+    border-radius: 25px;
+    height: 23px;
+    width: calc(100% - 22%);
+    top: 38px;
+    left: 22%; 
+}
+
+.boostrap::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #FFE53B;
+    border-radius: 25px;
+    transition: 2s;
+    height: 23px;
+    width: 0;
+    top: 38px;
+    left: 22%; 
+}
+
+div:hover .boostrap::after{
+    width: calc(100% - 52%);
+}
+/* boostrap before after and hover effect close */
+
+
+
+
+/* js before after and hover effect start */
+.js::before{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: rgba(221, 208, 208, 0.5);
+    border-radius: 25px;
+    height: 23px;
+    width: calc(100% - 22%);
+    top: 38px;
+    left: 22%; 
+}
+
+.js::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #FFE53B;
+    border-radius: 25px;
+    transition: 2s;
+    height: 23px;
+    width: 0;
+    top: 38px;
+    left: 22%; 
+}
+
+div:hover .js::after{
+    width: calc(100% - 62%);
+}
+/* js before after and hover effect close */
+
+
+
+
+
+
+/* Responsive section start */
+
+
+/* Target screen size 800px start */
+
+@media screen and (max-width: 800px){
+    div{
+        width: 80%;
+    }
+
+    .p{
+        padding: 38px 10px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+
+/* Resize after and before start */
+    .html::before, .css::before, .boostrap::before, .js::before{
+        top: calc(100% - 35px);
+        width: 100%;
+        left: 0; 
+    }
+
+    .html::after, .css::after, .boostrap::after, .js::after{
+        top: calc(100% - 35px);
+        width: 0;
+        left: 0; 
+    }
+/* Resize after and before close */
+
+
+/* Resize hover effect start */
+    div:hover .html::after{
+        width: 90%;
+    }
+
+    div:hover .css::after{
+        width: 80%;
+    }
+
+    div:hover .boostrap::after{
+        width: 70%;
+    }
+
+    div:hover .js::after{
+        width: 60%;
+    }
+
+/* Resize hover effect close */
+
+}
+
+/* Target screen size 800px star close */
+
+
+
+
+
+
+
+
+
+
+/* Target screen size 600px start */
+
+@media screen and (max-width: 600px){
+    div{
+        width: 80%;
+    }
+
+    .p{
+        padding: 38px 10px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+
+/* Resize after and before start */
+    .html::before, .css::before, .boostrap::before, .js::before{
+        top: calc(100% - 35px);
+        width: 100%;
+        left: 0; 
+    }
+
+    .html::after, .css::after, .boostrap::after, .js::after{
+        top: calc(100% - 35px);
+        width: 0;
+        left: 0; 
+    }
+/* Resize after and before close */
+
+
+/* Resize hover effect start */
+    div:hover .html::after{
+        width: 90%;
+    }
+
+    div:hover .css::after{
+        width: 80%;
+    }
+
+    div:hover .boostrap::after{
+        width: 70%;
+    }
+
+    div:hover .js::after{
+        width: 60%;
+    }
+
+/* Resize hover effect close */
+
+}
+
+/* Target screen size 600px close */
+
+
+/* Responsive section close */
